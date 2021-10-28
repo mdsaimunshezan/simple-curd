@@ -66,6 +66,7 @@ const run = async ()=>{
               const result = await crudCollection.updateOne(filter, updateDoc, options);
               console.log("update",result)
               res.send(result)
+              
           
         })
         
@@ -93,7 +94,7 @@ run().catch(console.dir)
 
 //USE ROUTE
 app.get("/",(req,res)=>{
-    res.send("this is home page");
+    res.send("this is home page current raning");
 })
 
 
